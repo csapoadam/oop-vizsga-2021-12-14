@@ -6,10 +6,19 @@
 
 #include "shapes.h"
 
-// Keszitse el a Point2D, Shape, Rectangle es Circle osztalyokat ugy, hogy
-// az alabbi kod forduljon!
-// Fontos, hogy:
-// Shape legyen absztrakt osztaly
+// Keszitse el a Point2D, Shape, Rectangle es Circle osztalyokat ugy, hogy az alabbi kod forduljon és az elvárt kimenetet adja.
+// Fontos, hogy a Shape osztály absztrakt legyen! - különben a static_assert nem fog lefordulni.
+
+// Tovabbi megjegyzesek:
+
+// A Rectangle inicializálásakor feltetelezheti, hogy az argumentumok egy teglalap 4 sarkat hatarozzak meg
+// az alabbi sorrendben: bal felso, bal also, jobb also, jobb felso.
+
+// A kor terulete: r negyzet pi. pi erteke legyen siman 3.14, beegetve.
+
+// 2 pont, a es b tavolsaga: sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2))
+
+// sqrt es pow a math.h konyvtarban megtalalhatoak, azaz: #include <math.h>
 
 
 // Az elvart kimenet az alabbi (a tavolsagok, teruletek nyilvan nem kell, hogy az utolso ezrelekig azonosak legyenek):
